@@ -1,0 +1,17 @@
+{
+    "_id": 4,
+    "name": "Indian Curry",
+    "type": "recipe",
+    "steps": [
+      "Heat oil in a pan.",
+      "Add spices and cook for 1 minute.",
+      "Add the Homemade Garlic-Ginger Paste and sauté.",
+      "Add vegetables and cook until tender."
+    ],
+    "ingredients": [
+      { "item_id": 2, "quantity": 2, "unit": "tablespoons" },
+      { "item_id": 5, "quantity": 200, "unit": "grams" }
+    ],
+    "created_at": "2025-01-19T00:00:00Z",
+    "updated_at": "2025-01-19T00:00:00Z"
+}

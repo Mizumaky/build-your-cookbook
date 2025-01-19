@@ -1,0 +1,16 @@
+{
+    "_id": 3,
+    "name": "Ginger",
+    "type": "ingredient",
+    "default_unit": "grams",
+    "special_units": [
+      { "unit": "centimeters", "conversion_factor": 3 }
+    ],
+    "nutrition": {
+      "calories": 2,
+      "carbohydrates": 0.4,
+      "protein": 0.04
+    },
+    "created_at": "2025-01-19T00:00:00Z",
+    "updated_at": "2025-01-19T00:00:00Z"
+}

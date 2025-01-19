@@ -1,0 +1,16 @@
+{
+    "_id": 1,
+    "name": "Garlic",
+    "type": "ingredient",
+    "default_unit": "grams",
+    "special_units": [
+      { "unit": "cloves", "conversion_factor": 5 }
+    ],
+    "nutrition": {
+      "calories": 4,
+      "carbohydrates": 1,
+      "protein": 0.2
+    },
+    "created_at": "2025-01-19T00:00:00Z",
+    "updated_at": "2025-01-19T00:00:00Z"
+}

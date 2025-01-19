@@ -1,0 +1,21 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Prague",
+			"country": {
+				"code": "CZ",
+				"name": "Czechia"
+			},
+			"subdivision": {
+				"code": "10",
+				"name": "Prague"
+			},
+			"timezone": "Europe/Prague",
+			"latitude": 50.1113,
+			"longitude": 14.4063,
+			"postalCode": "170 00"
+		},
+		"timestamp": 1737313361045
+	},
+	"siteId": "48e535d0-3556-43ce-bcd7-db4580414985"
+}

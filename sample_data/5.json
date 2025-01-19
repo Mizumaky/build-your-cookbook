@@ -1,0 +1,16 @@
+{
+  "_id": 5,
+  "name": "Chicken breasts",
+  "type": "ingredient",
+  "default_unit": "grams",
+  "special_units": [
+    { "unit": "piece", "conversion_factor": 100 }
+  ],
+  "nutrition": {
+    "calories": 239,
+    "carbohydrates": 0.4,
+    "protein": 27
+  },
+  "created_at": "2025-01-17T00:00:00Z",
+  "updated_at": "2025-01-17T00:00:00Z"
+}
