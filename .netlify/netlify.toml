@@ -1,16 +1,15 @@
+functionsDirectory = "C:\\Users\\mmull\\GitProjects\\BuildYourCookbook\\netlify\\functions"
+functionsDirectoryOrigin = "default"
 plugins = []
 headers = []
 redirects = []
-
-[functions]
-
-[functions."*"]
 
 [build]
 publish = "C:\\Users\\mmull\\GitProjects\\BuildYourCookbook\\dist"
 publishOrigin = "ui"
 commandOrigin = "ui"
 command = "npm run build"
+functions = "C:\\Users\\mmull\\GitProjects\\BuildYourCookbook\\netlify\\functions"
 
 [build.environment]
 
@@ -25,3 +24,7 @@ command = "npm run build"
 [build.processing.js]
 
 [build.services]
+
+[functions]
+
+[functions."*"]

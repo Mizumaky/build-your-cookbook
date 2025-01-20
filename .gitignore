@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Private stuff
+.env
+# Local Netlify folder
+.netlify
