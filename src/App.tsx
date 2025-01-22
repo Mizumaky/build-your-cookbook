@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-import { FoodItem, Recipe, RecipeIngredient, Ingredient, isRecipe, isIngredient } from './types/item';
+import { FoodItem, isRecipe, isIngredient } from './types/item';
 import { useDebounce } from './utils/debouncing';
 import { getErrorMessage } from './utils/errorHandling';
 

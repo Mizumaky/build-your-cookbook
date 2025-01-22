@@ -25,8 +25,8 @@ export interface Ingredient extends FoodItem {
 
 export function isRecipe(foodItem: FoodItem): foodItem is Recipe {
     return foodItem.type === 'recipe';
-  }
+}
   
-  export function isIngredient(foodItem: FoodItem): foodItem is Ingredient {
+export function isIngredient(foodItem: FoodItem): foodItem is Ingredient {
     return foodItem.type === 'ingredient';
-  }
+}

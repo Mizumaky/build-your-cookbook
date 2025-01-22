@@ -1,16 +1,20 @@
 import { Context } from '@netlify/functions'
+import { MongoClient } from 'mongodb'
+if (process.env.NODE_ENV !== 'production') {  // dynamic import
+  import('dotenv').then(dotenv => {
+    dotenv.config()
+  })
+}
 
-require('dotenv').config()
-const { MongoClient } = require('mongodb')
-const mongoClient = new MongoClient(process.env.MONGODB_URI)
+const mongoClient = new MongoClient(process.env.MONGODB_URI!)
 const clientPromise = mongoClient.connect()  // a promise is an object that represents the eventual completion (or failure) of an asynchronous operation
 
 export default async (request: Request, context: Context) => {
   try {
     // console.log(request.url)
     // console.log(context.account)
-    const database = (await clientPromise).db(process.env.MONGODB_DATABASE)
-    const recipesCollection = database.collection(process.env.MONGODB_COLLECTION)
+    const database = (await clientPromise).db(process.env.MONGODB_DATABASE!)
+    const recipesCollection = database.collection(process.env.MONGODB_COLLECTION!)
 
     const url = new URL(request.url, `http://${request.headers.get('host')}`);
     const searchQuery = url.searchParams.get('query'); 
@@ -22,7 +26,7 @@ export default async (request: Request, context: Context) => {
     const all = url.searchParams.get('all'); 
     const returnAll = all === 'true' ? true : false;  // default to false if not provided
     
-    let results = [];
+    let results;
     if (!searchQuery) {
         if (returnAll) {
           results = await recipesCollection.find().skip(skip).limit(limit).toArray();
