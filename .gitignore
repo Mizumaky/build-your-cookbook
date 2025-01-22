@@ -9,6 +9,7 @@ lerna-debug.log*
 
 node_modules
 # dist - aka the build folder (https://answers.netlify.com/t/vite-markdown-rendering-issue-in-production-on-netlify-works-locally/126902/4)
+dist
 dist-ssr
 *.local
 
